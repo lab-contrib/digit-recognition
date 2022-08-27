@@ -1,3 +1,5 @@
+<img src='./view.jpg'>
+
 # digit-recognition
 手写数字识别
 
