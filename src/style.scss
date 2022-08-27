@@ -1,0 +1,14 @@
+body {
+    font-family: cursive;
+}
+
+#dialog>li {
+    display: none;
+
+    &:last-child {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: #bab6b6a3;
+    }
+}

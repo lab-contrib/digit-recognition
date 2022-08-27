@@ -1,0 +1,30 @@
+.view {
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(115, 112, 112);
+    width: 350px;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    position: fixed;
+    left: calc(50vw - 175px);
+    top: calc(50vh - 48px);
+
+    &>h2 {
+        font-size: 20px;
+        line-height: 2em;
+    }
+
+    &>ul {
+        &>li {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgb(206, 202, 202);
+            margin: 2px;
+            cursor: pointer;
+        }
+    }
+}

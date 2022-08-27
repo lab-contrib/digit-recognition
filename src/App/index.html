@@ -1,0 +1,36 @@
+<!-- 仓库地址 -->
+<a class="fork" href="https://github.com/lab-contrib/digit-recognition" target="_blank">Fork Me on Github</a>
+
+<!-- 操作区域 -->
+<div class="view" ui-on:mouseup="doMouseUp">
+    <div class="tips">
+        你可以用鼠标在下面的画布上绘制0~9中任意一个数字，然后点击“识别”按钮进行识别。
+    </div>
+    <canvas ui-on:mousedown="doMouseDown" ui-on:mousemove="doMouseMove"></canvas>
+    <br />
+    <button class="train" title="训练程序" ui-on:click="doTrain">训练</button>
+    <button class="clear" title="点击我清空画布" ui-on:click="doClear">清空</button>
+    <button class="run" title="点击我对上面绘制的数字进行识别" ui-on:click="doRun">识别</button>
+</div>
+
+<!-- 弹框 -->
+<ul id="dialog"></ul>
+
+<!-- 下载种子 -->
+<button ui-on:click="downloadSeedData" class="download-seed">
+    下载训练种子资源
+</button>
+
+<!-- 下载权重 -->
+<button ui-on:click="downloadWeightData" class="download-weight">
+    下载训练后的权重
+</button>
+
+<!-- 训练提示 -->
+<div id="seed-msg">
+    正在使用种子训练程序
+    <hr />
+    <div id="seed-msg-val">
+        (时间有点长，可能需要几分钟，请耐心等待......)
+    </div>
+</div>
